@@ -84,9 +84,9 @@ std::vector<String> readClassNames(const char *filename = "synset_words.txt")
 
 int main(int argc, char **argv)
 {
-    String modelTxt = "bvlc_googlenet.prototxt";
-    String modelBin = "bvlc_googlenet.caffemodel";
-    String imageFile = (argc > 1) ? argv[1] : "space_shuttle.jpg";
+    String modelTxt = "../data/bvlc_googlenet.prototxt";
+    String modelBin = "../data/bvlc_googlenet.caffemodel";
+    String imageFile = (argc > 1) ? argv[1] : "../data/space_shuttle.jpg";
 
     //! [Create the importer of Caffe model]
     Ptr<dnn::Importer> importer;
